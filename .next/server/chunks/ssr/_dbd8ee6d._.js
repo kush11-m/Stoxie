@@ -21,11 +21,37 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 ;
-function FeatureCard() {
+function FeatureCard({ image, title, description }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "bg-white rounded-xl shadow-md p-6 flex flex-col items-left text-left",
-        children: "cards here"
-    }, void 0, false, {
+        className: "bg-black border border-purple-800 rounded-xl shadow-md p-6 flex flex-col items-left text-left",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                src: image,
+                alt: title,
+                className: "w-16 h-16 mb-4"
+            }, void 0, false, {
+                fileName: "[project]/app/components/HomePage/FeatureCard.js",
+                lineNumber: 4,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                className: "text-lg font-semibold text-white-800 mb-2",
+                children: title
+            }, void 0, false, {
+                fileName: "[project]/app/components/HomePage/FeatureCard.js",
+                lineNumber: 5,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "text-sm text-gray-500",
+                children: description
+            }, void 0, false, {
+                fileName: "[project]/app/components/HomePage/FeatureCard.js",
+                lineNumber: 6,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/app/components/HomePage/FeatureCard.js",
         lineNumber: 3,
         columnNumber: 7
@@ -42,32 +68,32 @@ __turbopack_context__.s({
 });
 const featuresData = [
     {
-        image: './HomePage/Featurses/01_Live_Stock_Trading.svg',
+        image: './HomePage/Features/01_Live_Stock_Trading.svg',
         title: 'Live Stock Tracking',
         description: 'Access live stock prices and trends to make informed decisions quickly.'
     },
     {
-        image: './HomePsage/Features/02_Smart_Search.svg',
+        image: './HomePage/Features/02_Smart_Search.svg',
         title: 'Smart Search',
         description: 'Find stocks quickly with our intelligent search functionality.'
     },
     {
-        image: './HomePagse/Features/03_Custom_Watchlists.svg',
+        image: './HomePage/Features/03_Custom_Watchlists.svg',
         title: 'Custom Watchlists',
         description: 'Create and manage watchlists for your favorite stocks.'
     },
     {
-        image: './HomesPage/Features/04_Portfolio_Management.svg',
+        image: './HomePage/Features/04_Portfolio_Management.svg',
         title: 'Portfolio Management',
         description: 'Track your investments, calculate gains/losses, and analyze performance.'
     },
     {
-        image: './HomePagse/Features/05_Historical_Charts.svg',
+        image: './HomePage/Features/05_Historical_Charts.svg',
         title: 'Historical Charts',
         description: 'View detailed historical data with interactive charts.'
     },
     {
-        image: './HomePasge/Features/06_Trend_Analysis.svg',
+        image: './HomePage/Features/06_Trend_Analysis.svg',
         title: 'Trend Analysis',
         description: 'Get AI-powered sentiment analysis and trend predictions.'
     }
@@ -89,18 +115,36 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$assets$2f$HomePage$2f
 ;
 function FeaturesSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "px-4 py-20 bg-black-100",
+        className: "px-4 py-20 bg-black",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-6xl mx-auto text-center",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                className: "text-2xl md:text-3xl font-bold text-black-800 mb-12",
-                children: "Feature Cards here...."
-            }, void 0, false, {
-                fileName: "[project]/app/components/HomePage/FeaturesSection.js",
-                lineNumber: 8,
-                columnNumber: 9
-            }, this)
-        }, void 0, false, {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    className: "text-2xl md:text-3xl font-bold text-black-800 mb-12",
+                    children: "Feature Cards here...."
+                }, void 0, false, {
+                    fileName: "[project]/app/components/HomePage/FeaturesSection.js",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid gap-8 sm:grid-cols-2 md:grid-cols-3",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$assets$2f$HomePage$2f$featuresData$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["featuresData"].map((feature, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$HomePage$2f$FeatureCard$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                            image: feature.image,
+                            title: feature.title,
+                            description: feature.description
+                        }, index, false, {
+                            fileName: "[project]/app/components/HomePage/FeaturesSection.js",
+                            lineNumber: 13,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/app/components/HomePage/FeaturesSection.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "[project]/app/components/HomePage/FeaturesSection.js",
             lineNumber: 7,
             columnNumber: 7
@@ -130,22 +174,60 @@ function Header() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center space-x-8",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center space-x-2",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-xl font-bold text-purple-600",
-                        children: "Stoxie"
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center space-x-2",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                            className: "text-xl font-bold text-purple-600",
+                            children: "Stoxie"
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/HomePage/Header.js",
+                            lineNumber: 10,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/HomePage/Header.js",
-                        lineNumber: 10,
-                        columnNumber: 11
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                        className: "hidden md:flex space-x-6",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "#",
+                                className: "text-white-700 hover:text-purple-600",
+                                children: "Dashboard"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/HomePage/Header.js",
+                                lineNumber: 13,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "#",
+                                className: "text-white-700 hover:text-purple-600",
+                                children: "Watchlist"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/HomePage/Header.js",
+                                lineNumber: 14,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "#",
+                                className: "text-white-700 hover:text-purple-600",
+                                children: "Portfolio"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/HomePage/Header.js",
+                                lineNumber: 15,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/components/HomePage/Header.js",
+                        lineNumber: 12,
+                        columnNumber: 9
                     }, this)
-                }, void 0, false, {
-                    fileName: "[project]/app/components/HomePage/Header.js",
-                    lineNumber: 8,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                ]
+            }, void 0, true, {
                 fileName: "[project]/app/components/HomePage/Header.js",
                 lineNumber: 7,
                 columnNumber: 7
@@ -161,7 +243,7 @@ function Header() {
                         className: "opacity-70 pr-2"
                     }, void 0, false, {
                         fileName: "[project]/app/components/HomePage/Header.js",
-                        lineNumber: 16,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -170,13 +252,13 @@ function Header() {
                         className: "w-full text-white-800 outline-none text-sm"
                     }, void 0, false, {
                         fileName: "[project]/app/components/HomePage/Header.js",
-                        lineNumber: 23,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/HomePage/Header.js",
-                lineNumber: 15,
+                lineNumber: 20,
                 columnNumber: 7
             }, this)
         ]
@@ -199,7 +281,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function IntroSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "w-full flex items-center justify-center text-center py-24 px-4 bg-black-50",
+        className: "w-full flex items-center justify-center text-center py-24 px-4 bg-black",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-3xl",
             children: [
@@ -223,7 +305,7 @@ function IntroSection() {
                     className: "flex justify-center space-x-4",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "px-6 py-3 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition",
+                            className: "px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-950 text-white rounded-md hover:from-purple-700 hover:to-purple-950 transition",
                             children: "Dashboard"
                         }, void 0, false, {
                             fileName: "[project]/app/components/HomePage/IntroSection.js",
@@ -231,7 +313,7 @@ function IntroSection() {
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "px-6 py-3 border border-purple-600 text-purple-600 rounded-md hover:bg-purple-50 transition",
+                            className: "px-6 py-3 border border-gradient-to-r from-purple-600 to-purple-950 text-purple-600 rounded-md hover:bg-purple-950 transition",
                             children: "Get Started"
                         }, void 0, false, {
                             fileName: "[project]/app/components/HomePage/IntroSection.js",
@@ -273,22 +355,23 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$HomePag
 ;
 ;
 ;
+imp;
 function HomePage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$HomePage$2f$Header$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.js",
-                lineNumber: 8,
+                lineNumber: 9,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$HomePage$2f$IntroSection$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.js",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$HomePage$2f$FeaturesSection$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.js",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 7
             }, this)
         ]

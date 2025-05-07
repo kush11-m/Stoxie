@@ -9,6 +9,11 @@ export default function Header() {
           {/* <img src="./HomePage/Header/01_Logo.svg" alt="logo" className="h-8 w-8" /> */}
           <h1 className="text-xl font-bold text-purple-600">Stoxie</h1>
         </div>
+        <nav className="hidden md:flex space-x-6">
+          <a href="#" className="text-white-700 hover:text-purple-600">Dashboard</a>
+          <a href="#" className="text-white-700 hover:text-purple-600">Watchlist</a>
+          <a href="#" className="text-white-700 hover:text-purple-600">Portfolio</a>
+        </nav>
       </div>
 
       {/* Center: Search */}
