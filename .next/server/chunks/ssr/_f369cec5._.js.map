@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/Kushagra/Desktop/Code/Capstone%202.O/Stoxie/app/layout.js"],"sourcesContent":["import './globals.css';\n\nexport const metadata = {\n  title: 'Stoxie - Smart Investment Platform',\n  description: 'Track your portfolio, analyze market trends, and make informed investment decisions.',\n};\n\nexport default function RootLayout({ children }) {\n  return (\n    <html lang=\"en\" className=\"h-full\">\n      <body className=\"h-full bg-black text-white antialiased\">\n        <div className=\"min-h-full flex flex-col\">\n          {children}\n        </div>\n      </body>\n    </html>\n  );\n}\n"],"names":[],"mappings":";;;;;;;AAEO,MAAM,WAAW;IACtB,OAAO;IACP,aAAa;AACf;AAEe,SAAS,WAAW,EAAE,QAAQ,EAAE;IAC7C,qBACE,8OAAC;QAAK,MAAK;QAAK,WAAU;kBACxB,cAAA,8OAAC;YAAK,WAAU;sBACd,cAAA,8OAAC;gBAAI,WAAU;0BACZ;;;;;;;;;;;;;;;;AAKX","debugId":null}},
+    {"offset": {"line": 48, "column": 0}, "map": {"version":3,"sources":["file:///Users/Kushagra/Desktop/Code/Capstone%202.O/Stoxie/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-rsc'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,4HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0],"debugId":null}}]
+}
