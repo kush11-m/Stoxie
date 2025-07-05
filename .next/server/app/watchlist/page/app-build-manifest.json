@@ -1,12 +1,14 @@
 {
   "pages": {
     "/watchlist/page": [
-      "static/chunks/[root of the server]__70af3c0d._.css",
-      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/[root of the server]__3dac66bc._.css",
+      "static/chunks/node_modules_next_dist_05476590._.js",
+      "static/chunks/app_components_AuthProvider_61454f1e.js",
       "static/chunks/app_layout_f0e4c1a2.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_38afdcf9._.js",
-      "static/chunks/node_modules_next_dist_ade45ae5._.js",
-      "static/chunks/app_watchlist_page_a7ff9f19.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_bd045d80._.js",
+      "static/chunks/node_modules_next_4398ad14._.js",
+      "static/chunks/app_b2677ff4._.js",
+      "static/chunks/app_watchlist_page_19012e4c.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_49a6ea35._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_43e3ffb8._.js",

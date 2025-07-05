@@ -2,7 +2,7 @@ export default function IntroSection() {
     return (
       <section className="w-full flex items-center justify-center text-center py-32 px-4 bg-black/95 backdrop-blur-sm">
         <div className="max-w-3xl">
-          <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-purple-700 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-6xl font-light bg-gradient-to-r from-purple-600 to-purple-700 bg-clip-text text-transparent mb-6 leading-[1.15] md:leading-[1.18]" style={{paddingBottom: '0.2em'}}>
             Stock Market Investing
           </h2>
           <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto">

@@ -186,7 +186,7 @@ function Header() {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center justify-between h-16",
+                className: "flex items-center justify-between h-20",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center space-x-8",
@@ -195,7 +195,7 @@ function Header() {
                                 href: "/",
                                 className: "flex items-center space-x-2 group",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                    className: "text-2xl font-bold bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent group-hover:from-purple-400 group-hover:to-purple-500 transition-all duration-300",
+                                    className: "text-2xl font-light bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent group-hover:from-purple-400 group-hover:to-purple-500 transition-all duration-300 leading-tight py-1",
                                     children: "Stoxie"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/HomePage/Header.js",
@@ -212,7 +212,7 @@ function Header() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/dashboard",
-                                        className: "px-4 py-2 text-sm font-medium text-gray-300 hover:text-purple-500 hover:bg-gray-800/50 rounded-md transition-all duration-200",
+                                        className: "px-4 py-2 text-sm font-light text-gray-300 hover:text-purple-500 hover:bg-gray-800/50 rounded-md transition-all duration-200",
                                         children: "Dashboard"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/HomePage/Header.js",
@@ -221,7 +221,7 @@ function Header() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/watchlist",
-                                        className: "px-4 py-2 text-sm font-medium text-gray-300 hover:text-purple-500 hover:bg-gray-800/50 rounded-md transition-all duration-200",
+                                        className: "px-4 py-2 text-sm font-light text-gray-300 hover:text-purple-500 hover:bg-gray-800/50 rounded-md transition-all duration-200",
                                         children: "Watchlist"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/HomePage/Header.js",
@@ -230,7 +230,7 @@ function Header() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/portfolio",
-                                        className: "px-4 py-2 text-sm font-medium text-gray-300 hover:text-purple-500 hover:bg-gray-800/50 rounded-md transition-all duration-200",
+                                        className: "px-4 py-2 text-sm font-light text-gray-300 hover:text-purple-500 hover:bg-gray-800/50 rounded-md transition-all duration-200",
                                         children: "Portfolio"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/HomePage/Header.js",
@@ -275,7 +275,7 @@ function Header() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                     type: "text",
                                     placeholder: "Search stocks...",
-                                    className: "block w-full pl-10 pr-3 py-2 border border-gray-700 rounded-lg bg-gray-800/50 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+                                    className: "block w-full pl-10 pr-3 py-2 border border-gray-700 rounded-lg bg-gray-800/50 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 font-light"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/HomePage/Header.js",
                                     lineNumber: 51,
