@@ -1,12 +1,35 @@
+// Header.js
+// Main navigation header with search and authentication buttons
+
 "use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useAuth } from "../AuthProvider";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function Header() {
   const { user, logout } = useAuth();
   const router = useRouter();
+  // State for search input
+  const [search, setSearch] = useState("");
+
+  // Handle search input change
+  const handleSearchChange = (e) => setSearch(e.target.value);
+
+  // Handle search submit (future: implement search logic)
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    // TODO: Implement search logic
+  };
+
+  // Handle login, signup, and logout navigation
+  const handleLogin = () => router.push("/login");
+  const handleSignup = () => router.push("/signup");
+  const handleLogout = () => {
+    logout();
+    router.push("/");
+  };
 
   return (
     <header className="w-full bg-black/95 backdrop-blur-sm border-b border-gray-800">
@@ -19,7 +42,6 @@ export default function Header() {
                 Stoxie
               </h1>
             </Link>
-            
             <nav className="hidden md:flex items-center space-x-1">
               <Link 
                 href="/dashboard" 
@@ -44,7 +66,7 @@ export default function Header() {
 
           {/* Search Bar and Auth Buttons */}
           <div className="flex items-center gap-4">
-            <div className="flex items-center border border-gray-700 rounded-md px-3 py-1 w-64 bg-gray-800/50">
+            <form onSubmit={handleSearchSubmit} className="flex items-center border border-gray-700 rounded-md px-3 py-1 w-64 bg-gray-800/50">
               <Image
                 src="./HomePage/Header/02_Search.svg"
                 alt="Search Icon"
@@ -55,19 +77,21 @@ export default function Header() {
               <input
                 type="text"
                 placeholder="Search stocks..."
+                value={search}
+                onChange={handleSearchChange}
                 className="w-full text-gray-200 outline-none text-sm bg-transparent pl-2 font-light"
               />
-            </div>
+            </form>
             {!user ? (
               <>
                 <button
-                  onClick={() => router.push("/login")}
+                  onClick={handleLogin}
                   className="px-4 py-2 text-sm font-light rounded-lg bg-gradient-to-r from-purple-600 to-purple-700 text-white hover:from-purple-500 hover:to-purple-600 transition"
                 >
                   Login
                 </button>
                 <button
-                  onClick={() => router.push("/signup")}
+                  onClick={handleSignup}
                   className="px-4 py-2 text-sm font-light rounded-lg border border-purple-600 text-purple-500 hover:bg-purple-600/10 transition"
                 >
                   Sign Up
@@ -75,7 +99,7 @@ export default function Header() {
               </>
             ) : (
               <button
-                onClick={() => { logout(); router.push("/"); }}
+                onClick={handleLogout}
                 className="px-4 py-2 text-sm font-light rounded-lg border border-gray-700 text-gray-300 hover:bg-gray-800/50 transition"
               >
                 Logout
@@ -86,4 +110,4 @@ export default function Header() {
       </div>
     </header>
   );
-}
+} 
