@@ -63,7 +63,7 @@ export default function DashboardPage() {
     setPortfolio(updated);
     localStorage.setItem("stoxie_portfolio", JSON.stringify(updated));
     setMsg(`You bought ${shares} share${shares > 1 ? 's' : ''} of ${stock.symbol}!`);
-    setTimeout(() => setMsg("");, 2000);
+    setTimeout(() => setMsg(""), 2000);
     setBuying(null);
     setQty("");
   }
