@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useAuth } from '../components/AuthProvider';
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const mockStocks = [
   { symbol: "RELIANCE", name: "Reliance Industries", price: 2850.5, change: 12.1, changesPercentage: 0.43, graph: "https://charts2.finviz.com/chart.ashx?t=RELIANCE&ty=c&ta=1&p=d&s=l" },
@@ -20,11 +20,20 @@ function sortByReturn(stocks) {
 export default function DashboardPage() {
   const { user } = useAuth();
   const [search, setSearch] = useState("");
-  const [watchlist, setWatchlist] = useState(() => JSON.parse(localStorage.getItem("stoxie_watchlist") || "[]"));
-  const [portfolio, setPortfolio] = useState(() => JSON.parse(localStorage.getItem("stoxie_portfolio") || "[]"));
+  const [watchlist, setWatchlist] = useState([]);
+  const [portfolio, setPortfolio] = useState([]);
   const [buying, setBuying] = useState(null);
   const [qty, setQty] = useState("");
   const [msg, setMsg] = useState("");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem("stoxie_watchlist");
+      if (stored) setWatchlist(JSON.parse(stored));
+      const storedPortfolio = localStorage.getItem("stoxie_portfolio");
+      if (storedPortfolio) setPortfolio(JSON.parse(storedPortfolio));
+    }
+  }, []);
 
   const stocks = sortByReturn(
     mockStocks.filter(s =>
@@ -37,7 +46,9 @@ export default function DashboardPage() {
     if (!watchlist.some(s => s.symbol === stock.symbol)) {
       const updated = [...watchlist, stock];
       setWatchlist(updated);
-      localStorage.setItem("stoxie_watchlist", JSON.stringify(updated));
+      if (typeof window !== "undefined") {
+        localStorage.setItem("stoxie_watchlist", JSON.stringify(updated));
+      }
     }
   }
 
@@ -61,7 +72,9 @@ export default function DashboardPage() {
       updated = [...portfolio, { ...stock, purchasePrice: stock.price, purchaseDate: new Date().toISOString(), shares }];
     }
     setPortfolio(updated);
-    localStorage.setItem("stoxie_portfolio", JSON.stringify(updated));
+    if (typeof window !== "undefined") {
+      localStorage.setItem("stoxie_portfolio", JSON.stringify(updated));
+    }
     setMsg(`You bought ${shares} share${shares > 1 ? 's' : ''} of ${stock.symbol}!`);
     setTimeout(() => setMsg(""), 2000);
     setBuying(null);
